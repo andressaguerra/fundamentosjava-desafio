@@ -26,11 +26,11 @@ public class Pessoa {
 	}
 	
 	public float calcularDesconto() {
-		return this.bolsista == true ? this.mensalidade / 2 : this.mensalidade;
+		return this.bolsista ? this.mensalidade / 2 : this.mensalidade;
 	}
 	
 	public String obterTipo() {
-		return this.bolsista == true ? "Bolsista" : "Pagante";
+		return this.bolsista ? "Bolsista" : "Pagante";
 	}
 	
 	@Override
